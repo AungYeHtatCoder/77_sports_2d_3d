@@ -8,7 +8,7 @@
                     <div class="d-flex justify-content-center">
                         <a href="{{ url('/') }}" class="text-decoration-none">
                             <div class="d-flex">
-                                <img src="{{ asset('assets/img/logo/logo.jpg') }}" width="150px" height="50px" alt="">
+                                <img src="{{ asset('assets/img/logo/logo.png') }}" width="50px" height="50px" alt="">
                                 {{-- <img src="{{ asset('assets/img/logo.png') }}" width="40px" height="40px" alt="" class="rounded-circle d-block">
                                 <h5 class="text-white ms-2" style="margin-top: 10px;">Aladdin 2D | 3D</h5> --}}
                             </div>
