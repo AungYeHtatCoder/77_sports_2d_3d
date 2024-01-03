@@ -55,8 +55,8 @@
             <div class="col-lg-3 col-md-6 col-sm-6">
               <div class="card  mb-2 p-3">
                 <div class="card-header p-3 pt-2">
-                  <div class="icon icon-lg icon-shape bg-gradient-dark shadow-dark shadow text-center border-radius-xl mt-n4 position-absolute">
-                    <i class="material-icons opacity-10">weekend</i>
+                  <div class="icon icon-lg icon-shape bg-gradient-success shadow-dark shadow text-center border-radius-xl mt-n4 position-absolute">
+                    <i class="fas fa-wallet text-white"></i>
                   </div>
                   <div class="text-end pt-1">
                     <p class="text-sm mb-0 text-capitalize">Master List</p>
@@ -75,8 +75,8 @@
             <div class="col-lg-3 col-md-6 col-sm-6">
               <div class="card  mb-2 p-3">
                 <div class="card-header p-3 pt-2">
-                  <div class="icon icon-lg icon-shape bg-gradient-dark shadow-dark shadow text-center border-radius-xl mt-n4 position-absolute">
-                    <i class="material-icons opacity-10">weekend</i>
+                  <div class="icon icon-lg icon-shape bg-gradient-success shadow-dark shadow text-center border-radius-xl mt-n4 position-absolute">
+                    <i class="fas fa-wallet text-white"></i>
                   </div>
                   <div class="text-end pt-1">
                     <p class="text-sm mb-0 text-capitalize">Master Create</p>
@@ -92,144 +92,112 @@
               </div>
             </div>
           </div> --}}
-          <div class="row">
-            <div class="col-lg-3 col-md-6 col-sm-6">
-              <div class="card  mb-2 p-3">
-                <div class="card-header p-3 pt-2">
-                  <div class="icon icon-lg icon-shape bg-gradient-dark shadow-dark shadow text-center border-radius-xl mt-n4 position-absolute">
-                    <i class="material-icons opacity-10">weekend</i>
+          <div class="row mb-3">
+            <div class="col-lg-3 col-md-6 col-sm-6 mb-3">
+              <div class="card">
+                <div class="card-header p-3 pt-2 bg-transparent">
+                  <div class="icon icon-lg icon-shape bg-gradient-success shadow-dark shadow text-center border-radius-xl mt-n4 position-absolute">
+                    <i class="fas fa-wallet text-white"></i>
                   </div>
                   <div class="text-end pt-1">
                     <p class="text-sm mb-0 text-capitalize">2D Daily Income</p>
-                    <h4 class="mb-0">{{ $dailyTotal }} MMK</h4>
+                    <h4 class="mb-0">{{ number_format($dailyTotal) }} <small>MMK</small></h4>
                   </div>
-                </div>
-                <hr class="dark horizontal my-0">
-                <div class="card-footer p-3">
-                  {{-- <p class="mb-0"><span class="text-success text-sm font-weight-bolder">+55% </span>than last week</p> --}}
                 </div>
               </div>
             </div>
-            <div class="col-lg-3 col-md-6 col-sm-6 mt-sm-0 mt-4">
-              <div class="card  mb-2 p-3">
-                <div class="card-header p-3 pt-2">
-                  <div class="icon icon-lg icon-shape bg-gradient-primary shadow-primary shadow text-center border-radius-xl mt-n4 position-absolute">
-                    <i class="material-icons opacity-10">leaderboard</i>
+            <div class="col-lg-3 col-md-6 col-sm-6 mb-3">
+              <div class="card">
+                <div class="card-header p-3 pt-2 bg-transparent">
+                  <div class="icon icon-lg icon-shape bg-info shadow-primary shadow text-center border-radius-xl mt-n4 position-absolute">
+                    <i class="fas fa-wallet"></i>
                   </div>
                   <div class="text-end pt-1">
                     <p class="text-sm mb-0 text-capitalize">2D Weekly Income</p>
-                    <h4 class="mb-0">{{ $weeklyTotal }} MMK</h4>
+                    <h4 class="mb-0">{{ number_format($weeklyTotal) }} <small>MMK</small></h4>
                   </div>
-                </div>
-                <hr class="dark horizontal my-0">
-                <div class="card-footer p-3">
-                  {{-- <p class="mb-0"><span class="text-success text-sm font-weight-bolder">+3% </span>than last month</p> --}}
                 </div>
               </div>
             </div>
-            <div class="col-lg-3 col-md-6 col-sm-6 mt-lg-0 mt-4">
-              <div class="card  mb-2 p-3">
+            <div class="col-lg-3 col-md-6 col-sm-6 mb-3">
+              <div class="card">
                 <div class="card-header p-3 pt-2 bg-transparent">
-                  <div class="icon icon-lg icon-shape bg-gradient-success shadow-success text-center border-radius-xl mt-n4 position-absolute">
-                    <i class="material-icons opacity-10">store</i>
+                  <div class="icon icon-lg icon-shape bg-gradient-warning shadow-success text-center border-radius-xl mt-n4 position-absolute">
+                    <i class="fas fa-wallet"></i>
                   </div>
                   <div class="text-end pt-1">
                     <p class="text-sm mb-0 text-capitalize ">2D Monthly Income</p>
-                    <h4 class="mb-0 ">{{ $monthlyTotal }} MMK</h4>
+                    <h4 class="mb-0 ">{{ number_format($monthlyTotal) }} <small>MMK</small></h4>
                   </div>
-                </div>
-                <hr class="horizontal my-0 dark">
-                <div class="card-footer p-3">
-                  {{-- <p class="mb-0 "><span class="text-success text-sm font-weight-bolder">+1% </span>than yesterday</p> --}}
                 </div>
               </div>
             </div>
-            <div class="col-lg-3 col-md-6 col-sm-6 mt-lg-0 mt-4">
-              <div class="card ">
+            <div class="col-lg-3 col-md-6 col-sm-6 mb-3">
+              <div class="card">
                 <div class="card-header p-3 pt-2 bg-transparent">
-                  <div class="icon icon-lg icon-shape bg-gradient-info shadow-info text-center border-radius-xl mt-n4 position-absolute">
-                    <i class="material-icons opacity-10">person_add</i>
+                  <div class="icon icon-lg icon-shape bg-gradient-danger shadow-info text-center border-radius-xl mt-n4 position-absolute">
+                    <i class="fas fa-wallet"></i>
                   </div>
                   <div class="text-end pt-1">
                     <p class="text-sm mb-0 text-capitalize ">2D Yearly Income </p>
-                    <h4 class="mb-0 ">{{ $yearlyTotal }} MMK</h4>
+                    <h4 class="mb-0 ">{{ number_format($yearlyTotal) }} <small>MMK</small></h4>
                   </div>
-                </div>
-                <hr class="horizontal my-0 dark">
-                <div class="card-footer p-3">
-                  {{-- <p class="mb-0 ">Just updated</p> --}}
                 </div>
               </div>
             </div>
           </div>
           {{-- 2d income end  --}}
           {{-- 3d income start --}}
-          <div class="row mt-3">
+          <div class="row mb-3">
             <div class="col-lg-3 col-md-6 col-sm-6">
-              <div class="card mb-2">
-                <div class="card-header p-3 pt-2">
-                  <div class="icon icon-lg icon-shape bg-gradient-dark shadow-dark shadow text-center border-radius-xl mt-n4 position-absolute">
-                    <i class="material-icons opacity-10">weekend</i>
+              <div class="card">
+                <div class="card-header p-3 pt-2 bg-transparent">
+                  <div class="icon icon-lg icon-shape bg-gradient-success shadow-dark shadow text-center border-radius-xl mt-n4 position-absolute">
+                    <i class="fas fa-wallet text-white"></i>
                   </div>
                   <div class="text-end pt-1">
                     <p class="text-sm mb-0 text-capitalize">3D Daily Income</p>
-                    <h4 class="mb-0">{{ $three_d_dailyTotal }}MMK</h4>
+                    <h4 class="mb-0">{{ number_format($three_d_dailyTotal) }} <small>MMK</small></h4>
                   </div>
-                </div>
-                <hr class="dark horizontal my-0">
-                <div class="card-footer p-3">
-                  {{-- <p class="mb-0"><span class="text-success text-sm font-weight-bolder">+55% </span>than last week</p> --}}
                 </div>
               </div>
             </div>
             <div class="col-lg-3 col-md-6 col-sm-6 mt-sm-0 mt-4">
-              <div class="card  mb-2 p-3">
-                <div class="card-header p-3 pt-2">
-                  <div class="icon icon-lg icon-shape bg-gradient-primary shadow-primary shadow text-center border-radius-xl mt-n4 position-absolute">
-                    <i class="material-icons opacity-10">leaderboard</i>
+              <div class="card">
+                <div class="card-header p-3 pt-2 bg-transparent">
+                  <div class="icon icon-lg icon-shape bg-gradient-info shadow-primary shadow text-center border-radius-xl mt-n4 position-absolute">
+                    <i class="fas fa-wallet"></i>
                   </div>
                   <div class="text-end pt-1">
                     <p class="text-sm mb-0 text-capitalize">3D Weekly Income</p>
-                    <h4 class="mb-0">{{ $three_d_weeklyTotal }}MMK</h4>
+                    <h4 class="mb-0">{{ number_format($three_d_weeklyTotal) }} <small>MMK</small></h4>
                   </div>
-                </div>
-                <hr class="dark horizontal my-0">
-                <div class="card-footer p-3">
-                  {{-- <p class="mb-0"><span class="text-success text-sm font-weight-bolder">+3% </span>than last month</p> --}}
                 </div>
               </div>
             </div>
             <div class="col-lg-3 col-md-6 col-sm-6 mt-lg-0 mt-4">
-              <div class="card  mb-2 p-3">
+              <div class="card">
                 <div class="card-header p-3 pt-2 bg-transparent">
-                  <div class="icon icon-lg icon-shape bg-gradient-success shadow-success text-center border-radius-xl mt-n4 position-absolute">
-                    <i class="material-icons opacity-10">store</i>
+                  <div class="icon icon-lg icon-shape bg-gradient-warning shadow-success text-center border-radius-xl mt-n4 position-absolute">
+                    <i class="fas fa-wallet"></i>
                   </div>
                   <div class="text-end pt-1">
                     <p class="text-sm mb-0 text-capitalize ">3D Monthly Income</p>
-                    <h4 class="mb-0 ">{{ $three_d_monthlyTotal }}MMK</h4>
+                    <h4 class="mb-0 ">{{ number_format($three_d_monthlyTotal) }} <small>MMK</small></h4>
                   </div>
-                </div>
-                <hr class="horizontal my-0 dark">
-                <div class="card-footer p-3">
-                  {{-- <p class="mb-0 "><span class="text-success text-sm font-weight-bolder">+1% </span>than yesterday</p> --}}
                 </div>
               </div>
             </div>
             <div class="col-lg-3 col-md-6 col-sm-6 mt-lg-0 mt-4">
               <div class="card ">
                 <div class="card-header p-3 pt-2 bg-transparent">
-                  <div class="icon icon-lg icon-shape bg-gradient-info shadow-info text-center border-radius-xl mt-n4 position-absolute">
-                    <i class="material-icons opacity-10">person_add</i>
+                  <div class="icon icon-lg icon-shape bg-gradient-danger shadow-info text-center border-radius-xl mt-n4 position-absolute">
+                    <i class="fas fa-wallet"></i>
                   </div>
                   <div class="text-end pt-1">
                     <p class="text-sm mb-0 text-capitalize ">3D Yearly Income </p>
-                    <h4 class="mb-0 "> {{ $three_d_yearlyTotal }} MMK</h4>
+                    <h4 class="mb-0 "> {{ number_format($three_d_yearlyTotal) }} <small>MMK</small></h4>
                   </div>
-                </div>
-                <hr class="horizontal my-0 dark">
-                <div class="card-footer p-3">
-                  {{-- <p class="mb-0 ">Just updated</p> --}}
                 </div>
               </div>
             </div>
@@ -242,17 +210,18 @@
             <div class="col-lg-6 col-md-6 col-sm-6 mb-5">
               <div class="card  mb-2 p-3">
                 <div class="d-flex mt-n2">
-                            <div class="avatar avatar-xl bg-gradient-dark border-radius-xl p-2 mt-n4">
-                                <img src="{{ asset('admin_app/assets/img/small-logos/logo-slack.svg') }}" alt="slack_logo">
+                            <div class="avatar avatar-xl bg-info border-radius-xl p-2 mt-n4">
+                              <i class="fas fa-rotate fa-2x"></i>
+                                {{-- <img src="{{ asset('admin_app/assets/img/small-logos/logo-slack.svg') }}" alt="slack_logo"> --}}
                             </div>
                             <div class="ms-3 my-auto">
                                 <h6 class="mb-0"> 2D Session Reset</h6>
-                                <div class="avatar-group">
-                                    <a href="javascript:;" class="avatar avatar-xs rounded-circle" data-bs-toggle="tooltip"
+                                <div class="avatar-group mt-4">
+                                    {{-- <a href="javascript:;" class="avatar avatar-xs rounded-circle" data-bs-toggle="tooltip"
                                         data-original-title="Jessica Rowland">
                                         <img alt="Image placeholder" src="{{ asset('admin_app/assets/img/team-3.jpg') }}"
                                             class="">
-                                    </a>
+                                    </a> --}}
                                     <form action="{{ route('admin.SessionReset') }}" method="POST">
                                       @csrf
                                       <button class="btn btn-primary" type="submit">Reset</button>
@@ -273,65 +242,65 @@
             <div class="col-lg-6 col-md-6 col-sm-6 mb-5">
               <div class="card  mb-2 p-3">
                 <div class="d-flex mt-n2">
-                            <div class="avatar avatar-xl bg-gradient-dark border-radius-xl p-2 mt-n4">
-                                <img src="{{ asset('admin_app/assets/img/small-logos/logo-slack.svg') }}" alt="slack_logo">
+                            <div class="avatar avatar-xl bg-danger border-radius-xl p-2 mt-n4">
+                              <i class="fas fa-rotate fa-2x"></i>
+                                {{-- <img src="{{ asset('admin_app/assets/img/small-logos/logo-slack.svg') }}" alt="slack_logo"> --}}
                             </div>
                             <div class="ms-3 my-auto">
                                 <h6 class="mb-0"> 2D Over Amount Limit Reset</h6>
-                                <div class="avatar-group">
-                                    <a href="javascript:;" class="avatar avatar-xs rounded-circle" data-bs-toggle="tooltip"
+                                <div class="avatar-group mt-4">
+                                    {{-- <a href="javascript:;" class="avatar avatar-xs rounded-circle" data-bs-toggle="tooltip"
                                         data-original-title="Jessica Rowland">
                                         <img alt="Image placeholder" src="{{ asset('admin_app/assets/img/team-3.jpg') }}"
                                             class="">
-                                    </a>
-        <form action="{{ route('admin.OverAmountLimitSessionReset') }}" method="POST">
+                                    </a> --}}
+                                    <form action="{{ route('admin.OverAmountLimitSessionReset') }}" method="POST">
                                       @csrf
                                       <button class="btn btn-primary" type="submit">OverAmountLimitReset</button>
                                   </form>
                                 </div>
                             </div>
-
                         </div>
-
-                <hr class="dark horizontal my-0">
-                <div class="card-footer p-3">
-                  <p class="mb-0"><span class="text-success text-sm font-weight-bolder">ပွဲချိန်ပြီး တခုပြီးတိုင်း  </span>၁၅ မိနစ်အတွင်း လုပ်ပေးရပါမည်။</p>
-                </div>
-              </div>
+                        <hr class="dark horizontal my-0">
+                        <div class="card-footer p-3">
+                          <p class="mb-0"><span class="text-success text-sm font-weight-bolder">ပွဲချိန်ပြီး တခုပြီးတိုင်း  </span>၁၅ မိနစ်အတွင်း လုပ်ပေးရပါမည်။</p>
+                        </div>
+                    </div>
             </div>
             {{-- session reset 2 --}}
-            <div class="col-lg-6 col-md-6 col-sm-6 mb-5 mt-lg-0 mt-4">
+            <div class="col-lg-6 col-md-6 col-sm-6 mb-2 mt-lg-0 mt-4">
               <div class="card  mb-2 p-3">
                 <div class="d-flex mt-n2">
-                            <div class="avatar avatar-xl bg-gradient-dark border-radius-xl p-2 mt-n4">
-                                <img src="{{ asset('admin_app/assets/img/small-logos/logo-slack.svg') }}" alt="slack_logo">
+                            <div class="avatar avatar-xl bg-{{ $lottery_matches->is_active ? 'success' : 'danger' }} border-radius-xl p-2 mt-n4">
+                              <i class="fas fa-door-{{ $lottery_matches->is_active ? 'open' : 'closed' }} fa-2x"></i>
+                                {{-- <img src="{{ asset('admin_app/assets/img/small-logos/logo-slack.svg') }}" alt="slack_logo"> --}}
                             </div>
                             <div class="ms-3 my-auto">
                                 <h6 class="mb-0">Morning Session</h6>
-                                <div class="avatar-group">
-                                    <a href="javascript:;" class="avatar avatar-xs rounded-circle" data-bs-toggle="tooltip"
+                                <div class="avatar-group mt-2">
+                                    {{-- <a href="javascript:;" class="avatar avatar-xs rounded-circle" data-bs-toggle="tooltip"
                                         data-original-title="Jessica Rowland">
                                         <img alt="Image placeholder" src="{{ asset('admin_app/assets/img/team-3.jpg') }}"
                                             class="">
-                                    </a>
+                                    </a> --}}
 
                                         <form action="{{ route('admin.OpenCloseTwoD' , $lottery_matches->id) }}" method="post">
                                             @csrf
                                             @method('PUT')
                                             <input type="hidden" name="is_active" value="{{ $lottery_matches->id }}">
                                             <div class="form-check form-switch ps-0">
-                                                <input class="form-check-input ms-auto" type="checkbox"
+                                              <div class="d-flex">
+                                                <input class="form-check-input ms-auto d-block" type="checkbox"
                                                     id="flexSwitchCheckDefault" name="flexSwitchCheckDefault"
                                                     {{ $lottery_matches->is_active ? 'checked' : '' }}>
-                                                <label class="form-check-label text-body ms-3 text-truncate w-80 mb-0"
+                                                <label class="form-check-label text-body ms-3 d-block text-truncate w-80 mb-0"
                                                     for="flexSwitchCheckDefault">Close For 2D Session</label>
+                                              </div>
                                             </div>
-                                            <button class="btn btn-primary" type="submit">Open / Close</button>
+                                            <button class="btn btn-primary mt-2" type="submit">Open / Close</button>
                                         </form>
-
                                 </div>
                             </div>
-
                         </div>
                 <hr class="horizontal my-0 dark">
                 <div class="card-footer p-3">
@@ -339,21 +308,22 @@
                 </div>
               </div>
             </div>
-            <div class="col-lg-6 col-md-6 col-sm-6 mb-5">
+            <div class="col-lg-6 col-md-6 col-sm-6 mb-2">
               <div class="card p-3">
                 {{-- 3d reset --}}
                 <div class="d-flex mt-n2">
-                            <div class="avatar avatar-xl bg-gradient-dark border-radius-xl p-2 mt-n4">
-                                <img src="{{ asset('admin_app/assets/img/small-logos/logo-slack.svg') }}" alt="slack_logo">
+                            <div class="avatar avatar-xl bg-warning border-radius-xl p-2 mt-n4">
+                              <i class="fas fa-rotate fa-2x"></i>
+                                {{-- <img src="{{ asset('admin_app/assets/img/small-logos/logo-slack.svg') }}" alt="slack_logo"> --}}
                             </div>
                             <div class="ms-3 my-auto">
                                 <h6 class="mb-0"> 3D Reset</h6>
-                                <div class="avatar-group">
-                                    <a href="javascript:;" class="avatar avatar-xs rounded-circle" data-bs-toggle="tooltip"
+                                <div class="avatar-group" style="margin-top: 40px;">
+                                    {{-- <a href="javascript:;" class="avatar avatar-xs rounded-circle" data-bs-toggle="tooltip"
                                         data-original-title="Jessica Rowland">
                                         <img alt="Image placeholder" src="{{ asset('admin_app/assets/img/team-3.jpg') }}"
                                             class="">
-                                    </a>
+                                    </a> --}}
                                  <form action="{{ route('admin.ThreeDReset') }}" method="POST">
                                       @csrf
                                       <button class="btn btn-primary" type="submit">3D Reset</button>
@@ -371,16 +341,16 @@
           </div>
           {{-- second row end --}}
           {{-- pie chart start --}}
-          <div class="row mt-3">
-        <div class="col-md-6">
-          {{-- <h5 class="mb-0">Pie Charts</h5>
-          <p class="text-sm mb-0">
-            Charts on this page use Chart.js - Simple yet flexible JavaScript charting for designers & developers.
-          </p> --}}
-        </div>
-      </div>
+          {{-- <div class="row mt-3">
+            <div class="col-md-6">
+              <h5 class="mb-0">Pie Charts</h5>
+              <p class="text-sm mb-0">
+                Charts on this page use Chart.js - Simple yet flexible JavaScript charting for designers & developers.
+              </p>
+            </div>
+          </div> --}}
       {{-- 2d chart start --}}
-      <div class="row mt-4">
+      {{-- <div class="row mt-4">
         <div class="col-lg-4 col-sm-6">
           <div class="card h-100">
             <div class="card-header pb-0 p-3">
@@ -420,12 +390,12 @@
             </div>
             <div class="card-footer pt-0 pb-0 p-3 d-flex align-items-center">
               <div class="w-60">
-                {{-- <p class="text-sm">
+                <p class="text-sm">
                   More than <b>1,200,000</b> sales are made using referral marketing, and <b>700,000</b> are from social media.
-                </p> --}}
+                </p>
               </div>
               <div class="w-40 text-end">
-                {{-- <a class="btn bg-light mb-0 text-end" href="javascript:;">Read more</a> --}}
+                <a class="btn bg-light mb-0 text-end" href="javascript:;">Read more</a>
               </div>
             </div>
           </div>
@@ -442,11 +412,11 @@
               <div class="d-flex align-items-center">
                 <span class="badge badge-md badge-dot me-4">
                   <i class="bg-primary"></i>
-                  {{-- <span class="text-dark text-xs">Facebook Ads</span> --}}
+                  <span class="text-dark text-xs">Facebook Ads</span>
                 </span>
                 <span class="badge badge-md badge-dot me-4">
                   <i class="bg-dark"></i>
-                  {{-- <span class="text-dark text-xs">Google Ads</span> --}}
+                  <span class="text-dark text-xs">Google Ads</span>
                 </span>
               </div>
             </div>
@@ -457,11 +427,11 @@
             </div>
           </div>
         </div>
-      </div>
+      </div> --}}
       {{-- 2d chart end --}}
           {{-- pie chart end --}}
-          {{-- 3d row --}}
-          <div class="row mt-4">
+      {{-- 3d row --}}
+      {{-- <div class="row mt-4">
         <div class="col-lg-4 col-sm-6">
           <div class="card h-100">
             <div class="card-header pb-0 p-3">
@@ -501,12 +471,12 @@
             </div>
             <div class="card-footer pt-0 pb-0 p-3 d-flex align-items-center">
               <div class="w-60">
-                {{-- <p class="text-sm">
+                <p class="text-sm">
                   More than <b>1,200,000</b> sales are made using referral marketing, and <b>700,000</b> are from social media.
-                </p> --}}
+                </p>
               </div>
               <div class="w-40 text-end">
-                {{-- <a class="btn bg-light mb-0 text-end" href="javascript:;">Read more</a> --}}
+                <a class="btn bg-light mb-0 text-end" href="javascript:;">Read more</a>
               </div>
             </div>
           </div>
@@ -523,11 +493,11 @@
               <div class="d-flex align-items-center">
                 <span class="badge badge-md badge-dot me-4">
                   <i class="bg-primary"></i>
-                  {{-- <span class="text-dark text-xs">Facebook Ads</span> --}}
+                  <span class="text-dark text-xs">Facebook Ads</span>
                 </span>
                 <span class="badge badge-md badge-dot me-4">
                   <i class="bg-dark"></i>
-                  {{-- <span class="text-dark text-xs">Google Ads</span> --}}
+                  <span class="text-dark text-xs">Google Ads</span>
                 </span>
               </div>
             </div>
@@ -538,18 +508,18 @@
             </div>
           </div>
         </div>
-      </div>
+      </div> --}}
           {{-- 3d row --}}
-          {{-- fourth row --}}
-          <div class="row mt-5">
-        <div class="col-md-6">
-          <h5 class="mb-0">2D 3D Daily Income Charts</h5>
-          {{-- <p class="text-sm mb-0">
-            Charts on this page use Chart.js - Simple yet flexible JavaScript charting for designers & developers.
-          </p> --}}
-        </div>
-      </div>
-           <div class="row mb-4 mt-5">
+        {{-- fourth row --}}
+        {{-- <div class="row mt-5">
+          <div class="col-md-6">
+            <h5 class="mb-0">2D 3D Daily Income Charts</h5>
+            <p class="text-sm mb-0">
+              Charts on this page use Chart.js - Simple yet flexible JavaScript charting for designers & developers.
+            </p>
+          </div>
+        </div> --}}
+        {{-- <div class="row mb-4 mt-5">
             <div class="col-lg-4 col-md-6 mt-4 mb-4">
               <div class="card z-index-2 ">
                 <div class="card-header p-0 position-relative mt-n4 mx-3 z-index-2 bg-transparent">
@@ -561,16 +531,16 @@
                 </div>
                 <div class="card-body">
                   <h6 class="mb-0 ">2D DailyIncome</h6>
-                  {{-- <p class="text-sm ">Last Campaign Performance</p> --}}
+                  <p class="text-sm ">Last Campaign Performance</p>
                   <hr class="dark horizontal">
                   <div class="d-flex ">
                     <i class="material-icons text-sm my-auto me-1">schedule</i>
-                    {{-- <p class="mb-0 text-sm"> campaign sent 2 days ago </p> --}}
+                    <p class="mb-0 text-sm"> campaign sent 2 days ago </p>
                   </div>
                 </div>
               </div>
             </div>
-            {{-- add more col --}}
+
             <div class="col-lg-4 col-md-6 mt-4 mb-4">
               <div class="card z-index-2 ">
                 <div class="card-header p-0 position-relative mt-n4 mx-3 z-index-2 bg-transparent">
@@ -582,18 +552,18 @@
                 </div>
                 <div class="card-body">
                   <h6 class="mb-0 ">3D DailyIncome</h6>
-                  {{-- <p class="text-sm ">Last Campaign Performance</p> --}}
+                  <p class="text-sm ">Last Campaign Performance</p>
                   <hr class="dark horizontal">
                   <div class="d-flex ">
                     <i class="material-icons text-sm my-auto me-1">schedule</i>
-                    {{-- <p class="mb-0 text-sm"> campaign sent 2 days ago </p> --}}
+                    <p class="mb-0 text-sm"> campaign sent 2 days ago </p>
                   </div>
                 </div>
               </div>
             </div>
-            {{-- add more col --}}
-          </div>
-          {{-- fourth row end --}}
+
+        </div> --}}
+        {{-- fourth row end --}}
 @endsection
 @section('scripts')
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>

@@ -50,7 +50,7 @@ class CheckForEarlyMonringWinners implements ShouldQueue
             // Retrieve the lottery for this entry
             $lottery = Lottery::findOrFail($entry->lottery_id);
             $methodToUpdatePivot = 'twoDigits';
-            
+
             // Update user's balance
             $user = $lottery->user;
             $user->balance += $entry->sub_amount * 85;  // Update based on your prize calculation

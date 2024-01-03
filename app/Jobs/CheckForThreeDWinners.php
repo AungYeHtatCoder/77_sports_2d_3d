@@ -47,17 +47,17 @@ class CheckForThreeDWinners implements ShouldQueue
         ->whereRaw('DATE(lotto_three_digit_copy.created_at) = ?', [$today])
         ->select('lotto_three_digit_copy.*') // Select all columns from pivot table
         ->get();
-        
+
         // Log::info('Winning entries count: ' . $winningEntries->count());
     foreach ($winningEntries as $entry) {
         DB::transaction(function () use ($entry) {
             // Retrieve the lottery for this entry
             $lottery = Lotto::findOrFail($entry->lotto_id);
             $methodToUpdatePivot = 'threedDigits';
-            
+
             // Update user's balance
             $user = $lottery->user;
-            $user->balance += $entry->sub_amount * 550;  // Update based on your prize calculation
+            $user->balance += $entry->sub_amount * 700;  // Update based on your prize calculation
             $user->save();
 
             // Update prize_sent in pivot
