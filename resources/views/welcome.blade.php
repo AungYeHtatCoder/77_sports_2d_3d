@@ -5,7 +5,7 @@
 <!-- content -->
 <div class="container-fluid py-5 mt-5">
     <!-- carousel -->
-    {{-- change logo --}}
+    
     <div id="carouselExampleControls" class="carousel slide border-purple" data-bs-ride="carousel">
         <div class="carousel-inner">
             @foreach ($banners as $key => $banner)
@@ -26,7 +26,7 @@
     <marquee behavior="" direction="">
         {{ $marqueeText->text ?? "" }}
     </marquee>
-    <!-- carousel -->
+   
 
     <!-- 2D 3D -->
     <div class="d-flex justify-content-around my-2">
