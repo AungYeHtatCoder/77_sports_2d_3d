@@ -16,7 +16,6 @@
     }
     #login{
         max-height: 100vh;
-        padding-top:100px;
     }
 
 </style>
@@ -33,7 +32,7 @@
                     <h3>Aladdin 2D | 3D</h3>
                     <span>အကောင့် ဖွင့်ရန်</span>
                 </div> --}}
-                <img src="{{ asset('assets/img/logo-v.png') }}" width="300px" alt="">
+                <img src="{{ asset('assets/img/logo/logo.png') }}" width="200px" alt="">
             </a>
             <form action="{{ route('register') }}" method="post">
                 @csrf
