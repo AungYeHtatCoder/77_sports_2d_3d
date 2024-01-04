@@ -9,8 +9,8 @@
                         <a href="{{ url('/') }}" class="text-decoration-none">
                             <div class="d-flex">
                                 <img src="{{ asset('assets/img/logo/logo.png') }}" width="50px" height="50px" alt="">
-                                {{-- <img src="{{ asset('assets/img/logo.png') }}" width="40px" height="40px" alt="" class="rounded-circle d-block">
-                                <h5 class="text-white ms-2" style="margin-top: 10px;">Aladdin 2D | 3D</h5> --}}
+                                {{-- <img src="{{ asset('assets/img/logo.png') }}" width="40px" height="40px" alt="" class="rounded-circle d-block"> --}} 
+                                <h5 class="text-white ms-2" style="margin-top: 10px;">77 Sports 2D | 3D</h5> 
                             </div>
                         </a>
                     </div>
@@ -27,7 +27,7 @@
                         @endguest
                         @auth
                         <div class="mt-2">
-                            <i class="fas text-white fa-bell me-1"></i>
+                            {{-- <i class="fas text-white fa-bell me-1"></i> --}}
                             <button class="btn sidebarToggle">
                                 <i class="fas fa-bars text-white"></i>
                             </button>

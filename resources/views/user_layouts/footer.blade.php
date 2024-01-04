@@ -16,9 +16,10 @@
                                     </a>
                                 </div>
                                 <div class="col-4">
-                                    <a href="{{ route('contact') }}" class="text-decoration-none d-block footer-link {{ Route::currentRouteNamed('contact') ? 'active' : '' }}">
-                                        <i class="fas fa-phone-volume"></i>
-                                        <small class="mt-2 d-block" style="font-size: 12px;">ဆက်သွယ်ရန်</small>
+
+                                    <a href="{{ route('profile') }}" class="text-decoration-none d-block footer-link {{ Route::currentRouteNamed('profile') ? 'active' : '' }}">
+                                        <i class="fas fa-user"></i>
+                                        <small class="mt-2 d-block" style="font-size: 12px;">ကျွန်ုပ်</small>
                                     </a>
                                 </div>
                             </div>
